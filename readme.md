@@ -11,7 +11,8 @@
 
 소감: 이번 주차는 무작정 코드를 치기보다는, 앞으로 만들 AI 가계부가 어떤 원리로 돌아가는지 전체적인 숲을 보는 데 집중했다. C언어나 자바를 배웠을 때와 달리, 웹 서버가 클라이언트와 어떻게 통신하고 LLM API를 어떤 방식으로 호출하는지 그 '기초 이론'을 이해하는 것이 무엇보다 중요하다고 느꼈다.
 
-<img width="1917" height="1037" alt="image" src="https://gist.github.com/user-attachments/assets/0be0fcf6-88c7-491b-ad1a-b9f8040adce0" />
+<img width="1917" height="1037" alt="image" src="https://github.com/user-attachments/assets/cfcdfcf0-5911-4c81-af1e-854b53b856c3" />
+
 2주차 활동 내용 (데이터베이스 연결 및 API 테스트)
 이번 주차는 서버에 실제 데이터를 영구적으로 저장하고 불러오는 데이터베이스 연동 기초를 실습했습니다.
 
@@ -24,11 +25,12 @@ API 엔드포인트 구축: 사용자의 수입/지출 내역을 서버로 보�
 - 2주차 소감
 이번 주는 다른 일정들이 많아 프로젝트에 긴 시간을 투자하지는 못했다. 그래서 데이터베이스를 연결하는 아주 기본적인 뼈대 코드만 작성해 보았는데, FastAPI가 자동으로 만들어주는 테스트 웹사이트 덕분에 내가 짠 코드가 어떻게 작동하는지 화면으로 바로바로 확인할 수 있었다. 보통 백엔드나 서버 설정이라고 하면 까만 터미널 창만 보고 있어야 해서 지루할 줄 알았는데, 내가 입력한 내역이 웹 화면을 거쳐 실제 데이터베이스 파일에 저장되고 다시 불러와지는 과정을 즉각적으로 눈으로 보니 흥미가 확 생기고 정말 재미있었다. 비록 많은 분량을 소화하진 못했지만 백엔드 개발의 재미를 확실히 느낄 수 있었던 시간이었다.
 
-<img width="1917" height="951" alt="image" src="https://gist.github.com/user-attachments/assets/4e76b80c-ea51-4a93-9c2a-f511dd2e440a" />
-<img width="1917" height="1077" alt="image" src="https://gist.github.com/user-attachments/assets/a6ff7e70-9040-412a-8f78-519781c612e9" />
-<img width="1897" height="967" alt="image" src="https://gist.github.com/user-attachments/assets/391647c4-a5ac-44d4-9c9f-12731a7f6590" />
-<img width="1895" height="905" alt="image" src="https://gist.github.com/user-attachments/assets/25f989e1-5715-4311-8de7-27bc982a13ac" />
-<img width="1917" height="1027" alt="image" src="https://gist.github.com/user-attachments/assets/1cd7fb25-ea99-41db-baa8-11154ff2ce74" />
+<img width="1917" height="951" alt="image" src="https://github.com/user-attachments/assets/5799c378-dd44-4cf7-a141-cb6bcff79276" />
+<img width="1917" height="1077" alt="image" src="https://github.com/user-attachments/assets/186ddf63-8c0d-46c8-8c96-9c85fa71bb7d" />
+<img width="1897" height="967" alt="image" src="https://github.com/user-attachments/assets/7299ec77-a34c-4eb1-ac49-3af729ff249b" />
+<img width="1895" height="905" alt="image" src="https://github.com/user-attachments/assets/41f06656-86a0-44d4-90d1-595e01a608c3" />
+<img width="1917" height="1027" alt="image" src="https://github.com/user-attachments/assets/6835aaa1-ad1d-42cf-b3ba-c82ae8147758" />
+
 3주차 활동 내용 - LLM API 연동 및 AI 분석 기능 구현
 이번 주는 서버에 저장된 데이터를 바탕으로 AI가 소비 패턴을 분석해 주는 가계부의 핵심 기능을 구현했습니다.
 
@@ -41,9 +43,10 @@ API 통신 및 결과 확인: 서버 코드 내에서 구글 AI 모델로 분석
 = 3주차 소감
 본격적으로 AI를 서버에 붙이는 3주차 작업을 진행했다. 처음에는 API 키를 등록하고 결제를 해야 한다는 사실에 멈칫했지만, 구글 Gemini라는 훌륭한 무료 대안을 찾아 적용하는 방법을 배웠다. 긴 API 키를 코드에 넣고 다루는 과정이 조금 낯설었지만, 내가 DB에 입력해 둔 '국밥' 같은 실제 지출 데이터가 코드를 통해 AI에게 전달되고, AI가 그 데이터를 분석해 나만의 맞춤형 절약 팁을 반환해 주는 것을 보니 무척 신기했다. 'AI 서비스'라는 것이 마법 같은 게 아니라, 결국 잘 정리된 내 데이터를 API를 통해 AI 모델과 주고받는 논리적인 과정이라는 것을 몸소 깨달은 알찬 시간이었다.
 
-<img width="1917" height="1076" alt="image" src="https://gist.github.com/user-attachments/assets/6834c662-85d9-4115-9aa6-d0a8aa8fef4c" />
-<img width="1917" height="1055" alt="image" src="https://gist.github.com/user-attachments/assets/ca096e42-c99b-416b-881f-c83db1baca2f" />
-<img width="1917" height="1012" alt="image" src="https://gist.github.com/user-attachments/assets/588914f1-0dd5-43c6-8355-2ce6c37a2ba3" />
+<img width="1917" height="1076" alt="image" src="https://github.com/user-attachments/assets/63da2b3f-a00c-42c1-aef1-08d1d20c8a5d" />
+<img width="1917" height="1055" alt="image" src="https://github.com/user-attachments/assets/b4f5ef61-fdcc-4d0f-9689-48d4556801c8" />
+<img width="1917" height="1012" alt="image" src="https://github.com/user-attachments/assets/51016ee1-0de1-43fa-b5fe-7557e99888e3" />
+
 
 4주 차 활동 내용
 사용자 인터페이스 구축: HTML과 CSS를 활용하여 수입/지출 내역을 입력하는 폼과, 저장된 데이터를 리스트로 보여주는 직관적인 웹 화면을 구성했습니다.
@@ -54,10 +57,10 @@ API 통신 및 결과 확인: 서버 코드 내에서 구글 AI 모델로 분석
 
 - 4주 차 소감
 사람들이 실제로 사용할 수 있는 형태의 '웹 화면'을 만들었다는 점에서 가장 성취감이 큰 한 주였다. 프론트엔드 코드와 백엔드 코드를 연결하는 과정이 헷갈렸지만, 버튼을 눌렀을 때 화면 새로고침 없이 AI가 내 소비 패턴을 분석해 화면에 텍스트를 띄워주는 모습을 보니 그동안 고생하며 서버 뼈대와 DB를 세팅했던 것들이 완벽하게 보상받는 기분이었다. 이제 제대로 된 웹 서비스의 형태를 갖췄으니, 다음 주에는 배포할 수 있도록하여 내 컴퓨터가 아닌 진짜 인터넷 주소로 접속하도록 구현할 것이다.
-<img width="1917" height="1030" alt="image" src="https://gist.github.com/user-attachments/assets/b24760f3-4cdd-4c87-b68e-98c88f18f326" />
+<img width="1917" height="1030" alt="image" src="https://github.com/user-attachments/assets/ae69706c-3b50-461f-9f78-64bca6aecc34" />
+<img width="1892" height="1027" alt="image" src="https://github.com/user-attachments/assets/3369afb6-e902-43b8-b46c-0b857e34fdf8" />
+<img width="1917" height="1022" alt="image" src="https://github.com/user-attachments/assets/5889c98c-ef48-4dad-b681-7c1eefb932b3" />
 
-<img width="1892" height="1027" alt="image" src="https://gist.github.com/user-attachments/assets/fb368b5b-1f36-46e3-8217-b7d9f3d5b0f9" />
-<img width="1917" height="1022" alt="image" src="https://gist.github.com/user-attachments/assets/bed4921b-8d50-47a9-a9db-bc55c7405a77" />
 6주 차 활동 내용 (디자인 고도화 및 서비스 모니터링)
 이번 주차는 배포된 기본 서비스의 퀄리티를 한 단계 끌어올리고, 실제 백엔드 운영자 입장에서 서버 상태를 점검하며 다음 버전 업데이트를 기획하는 데 집중했습니다.
 
@@ -72,7 +75,8 @@ UI/UX 디자인 전면 개편: 모던 스타일을 채택하여 가계부 화면
 
 https://ai-moneybook.onrender.com
 
-<img width="1917" height="947" alt="image" src="https://gist.github.com/user-attachments/assets/a3d9c09d-56bf-4493-8a98-3c8b7ba6eecd" />
-<img width="1912" height="911" alt="image" src="https://gist.github.com/user-attachments/assets/321d39da-e9fb-41f1-8f9c-1212c8b925b6" />
-<img width="1290" height="2796" alt="image" src="https://gist.github.com/user-attachments/assets/3a955515-8b63-42c1-b9f1-336864baee13" />
-<img width="1290" height="2796" alt="image" src="https://gist.github.com/user-attachments/assets/5fb90f7b-0bf7-469e-8d39-cf2221c378d9" />
+<img width="1917" height="947" alt="image" src="https://github.com/user-attachments/assets/8d5e4ab7-5123-4145-9aca-e79e9c685959" />
+<img width="1912" height="911" alt="image" src="https://github.com/user-attachments/assets/3ba750e4-0f7c-47d1-959c-7bb634b9438c" />
+<img width="1290" height="2796" alt="image" src="https://github.com/user-attachments/assets/e9afa4f1-4d38-4259-8e09-a4122cb0d579" />
+<img width="1290" height="2796" alt="image" src="https://github.com/user-attachments/assets/ea95c6f8-b01b-4f9c-94f0-b5b0d6fcc82a" />
+
